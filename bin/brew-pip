@@ -60,6 +60,7 @@ class %(klass)s < PipFormula
   url "%(url)s"
   version "%(version)s"
   homepage "%(homepage)s"
+  env :userpaths
 end
 """.strip() % {'klass': klass, 'url': data['download_url'], 'homepage': data['home_page'], 'version': data['version']}
 
